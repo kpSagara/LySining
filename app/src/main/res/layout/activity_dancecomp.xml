@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dancecomp"
+    android:background="@drawable/orgbg">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/dc2" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView4"
+        android:layout_marginLeft="10dp"
+        android:text="About Us"
+        android:fontFamily="@font/zapfhumanist601bt"
+        android:textColor="#444444"
+        android:textSize="40sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView4"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="55dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="The official dance organization of Lyceum of the Philippines University - Campus under the Arts and Cultural Affairs Department with the Supervising Artistic Director/Adviser of LPU Cavite Dance Company Mr. Francis Jaena Jr., catering various dance genres such as: Hip-hop, Jazz Funk, Modern Ballet, Contemporary dance, Philippine Folk dances, and Ballroom. \n"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="History and profile"
+            android:textSize="30sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#555555"
+            />
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="\nLPU Cavite Dance Company (LCDC) began when LPU Cavite was established in 2008 and featured at GMA 7’s morning show “Unang Hirit”, wherein the school formed a group of student who will participate and perform for that special day. Through their efforts, the LPU Cavite management decided to make them the official performing group of the university.
+\n\nThe company was first called as the “LPU Dance Troupe” that focuses more on folk dance, modern dance and ballroom. On 2011, the management amends the name LPU Dance Troupe to “LPU Cavite Dance Troupe” to make a distinction between Manila and Cavite’s dance group. It became “LPU Footworx” as the group decided to change it in 2012. Now, the group uses “LPU Cavite Dance Company” as their official name.
+\n\nOn November 2012, LCDC presently have their new ArtCAD Director, Mr. Nestor Del Rosario Raoet Jr.. He provides numerous dance workshops with different professional choreographers in different genres including ballet and contemporary dance, cultural dance, hip-hop and jazz. In 2016, the management turned to the new Artistic Director Mr. Francis Jaena Jr. who is a former member San Diego City Ballet, Singapore Dance Theater and Ballet Manila who transform the company into a professional dance company based inside the university that focus more into Contemporary Ballet and Folk dances. They were also invited to perform by several schools and compete both on national and international stage.\n"
+            android:layout_marginLeft="10dp"
+
+            />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <ImageButton
+        android:id="@+id/fbdc"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/facebook" />
+
+    <ImageButton
+        android:id="@+id/instadc"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/fbdc"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/instagram" />
+
+</RelativeLayout>

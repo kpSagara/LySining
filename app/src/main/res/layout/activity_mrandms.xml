@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mrandms"
+    android:background="@drawable/orgbg">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/mm2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView4"
+        android:layout_marginStart="10dp"
+        android:text="About Us"
+        android:fontFamily="@font/zapfhumanist601bt"
+        android:textColor="#444444"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_below="@id/textView4"
+        android:text="Mr and Ms LPU is the official and annual event held by and at Lyceum of the Philippines Cavite,It is a beauty pageant among the student of LPU where students from different colleges compete and showcase their beauty and talent .
+        \n\nMr and Ms LPU is held yearly during the university's Foundation Anniversary."
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="55dp"
+        />
+
+
+
+</RelativeLayout>

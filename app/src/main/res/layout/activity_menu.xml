@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainmenu2"
+    tools:context=".MainMenu">
+
+
+    <ImageView
+        android:id="@+id/coverbg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/group2" />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5dp"
+        android:layout_marginEnd="2dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        android:layout_below="@id/imageView"
+ />
+
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-10dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_below="@id/textName"
+        />
+
+    <Space
+        android:id="@+id/dummy"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:layout_below="@id/coverbg"
+        android:layout_marginTop="10dp"/>
+
+
+
+    <ImageButton
+        android:id="@+id/events"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:layout_below="@id/coverbg"
+        android:layout_centerHorizontal="true"
+        android:layout_toStartOf="@id/dummy"
+        app:srcCompat="@drawable/event" />
+
+    <ImageButton
+        android:id="@+id/artcad"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="15dp"
+        android:layout_below="@id/coverbg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:layout_toEndOf="@id/dummy"
+        app:srcCompat="@drawable/organization" />
+
+    <ImageButton
+        android:id="@+id/info"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toStartOf="@id/dummy"
+        android:layout_below="@id/gallery"
+        app:srcCompat="@drawable/info" />
+
+    <ImageButton
+        android:id="@+id/gallery"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toStartOf="@id/dummy"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:layout_below="@id/events"
+
+        app:srcCompat="@drawable/gallery" />
+
+    <ImageButton
+        android:id="@+id/news"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@id/dummy"
+        android:layout_below="@id/artcad"
+        app:srcCompat="@drawable/news"
+        tools:layout_editor_absoluteX="349dp"
+        tools:layout_editor_absoluteY="438dp" />
+
+    <ImageButton
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@id/dummy"
+        android:layout_below="@id/news"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/signout" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/user" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="10dp"
+        app:civ_border_color="#ffffff"
+        app:civ_border_width="1dp"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+</RelativeLayout>
+

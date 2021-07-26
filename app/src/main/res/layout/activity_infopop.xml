@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/singleb"
+    tools:context=".infopop">
+
+    <ImageButton
+        android:id="@+id/fbartcad"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@id/textView2"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/facebook" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:text="The arts and cultural affairs of LPU Cavite are dedicated to develop young artists who wish to improve their skills, talent and nurture the well being of each student artists."
+        android:textAlignment="center"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/textView3"
+        android:layout_centerInParent="true"
+        android:autoLink="email"
+        android:text="francis.jaena@lpu.edu.ph"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:autoLink="phone"
+        android:text="(046) 481 1400"
+        android:textSize="20sp" />
+
+
+
+
+
+</RelativeLayout>

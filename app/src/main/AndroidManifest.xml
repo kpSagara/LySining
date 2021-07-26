@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lpucavite">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/lpucar"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/lpucar"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".infopop"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AppTheme.CustomTheme"
+        />
+        <activity
+            android:name=".eventpopup"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ImagesActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".Symphband"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".tanghalyce"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".mrandms"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".harmchor"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".dancecomp"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".orgs"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".MainMenu"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".imagepopup"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".EventActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".NewsPopUp"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".NewsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".ReminderBroadcast" />
+    </application>
+
+</manifest>

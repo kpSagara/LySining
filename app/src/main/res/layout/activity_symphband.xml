@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Symphband"
+    android:background="@drawable/orgbg">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/sb2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView4"
+        android:layout_marginLeft="10dp"
+        android:text="About Us"
+        android:fontFamily="@font/zapfhumanist601bt"
+        android:textColor="#444444"
+        android:textSize="40sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView4"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="55dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The Lyceum Of the Philippines University Symphonic band of Cavite was established as part of the many performing group of LPU-Cavite.\n\nIt is Under the supervision of the Arts And Cultural Affairs Department Of LPU-CAVITE with the full support of the University Vice President for Administration Miss Maria Teresa O.Pilapil and University President Atty.Roberto P.Laurel.\n\nThe LPUSB aims to showcase the musical talents of the students of the University as well as providing partial scholarships to deserving students.\nAt present The Band is under the directorship of Frenvee Clarito Andra of the Philippine Philharmonic Orchestra.Under his leadership the band continues to grow and give memorable performances in and outside the university.\n\nThey Have been a regular performer at the annual Alabang Town Center's Community Christmas Concert and at the Concert at the Park Presents in Rizal Park,Manila.At present LPUSB is comprised of around 20 student members from different  colleges of the University.\n"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+
+            />
+
+    </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/fbsb"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/facebook" />
+
+</RelativeLayout>

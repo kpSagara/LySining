@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tanghalyce"
+    android:background="@drawable/orgbg">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/tl2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView4"
+        android:layout_marginLeft="10dp"
+        android:text="About Us"
+        android:fontFamily="@font/zapfhumanist601bt"
+        android:textColor="#444444"
+        android:textSize="40sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView4"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="55dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:text="The official theater company of Lyceum of the Philippines University - Cavite. Headed by Mr. Javier Laurel under the Arts and Cultural Affairs Department.\n"
+            />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="History and profile"
+                android:textSize="30sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#555555"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Founded in 2019 to be the premier theater organization of LPU-Cavite, Tanghalang Lykeion aims to foster theater arts in the community through storytelling.
+                \n\nIn April of 2019, the organization joined the Padayon: 22nd Dulaang ROC Playfest with its original play, Away Bata, garnering five major awards (Best Director, Best Supporting Actor, Best Script and Story, Best Production Design, Best Lighting Design)
+\n\nIts first production, held in July of 2019, was entitled Irog: Ang Kuwento ng Pag-Ibig, a collection of two one-act plays that depicted different facets of love: Napakselan ng Gabi, written by Palanca Awardee Dr. Joem Antonio, and A Sunny Morning, written by Joaquin and Serafin Quintero, translated by Javier Antonio Laurel.
+\n\nIn November 2019, Tanghalang Lykeion produced its first musical, Xander Returns: Pulis Pangkalawakan, a superhero sci-fi musical, created by Palanca awardee Juan Ekis and Ian Amane.
+\n"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/fbtl"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/facebook" />
+
+    <ImageButton
+        android:id="@+id/instatl"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/fbtl"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/instagram" />
+
+    <ImageButton
+        android:id="@+id/yttl"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/instatl"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/youtube" />
+
+</RelativeLayout>

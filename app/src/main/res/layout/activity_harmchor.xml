@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".harmchor"
+    android:background="@drawable/orgbg">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/hc2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView4"
+        android:layout_marginLeft="10dp"
+        android:text="About Us"
+        android:fontFamily="@font/zapfhumanist601bt"
+        android:textColor="#444444"
+        android:textSize="40sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView4"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="55dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="The LPU Harmonic Chorale - the official singing ambassadors of LPU Cavite, is a group with one thing in common, the love of singing music.
+    \nNot only do they share their talents in numerous occasions inside the school, but they also do competitions and performances outside their university.\nThis group always sings with not only their gifted voices, but also with their passionate hearts.
+    \n\nAll of them are trained by their choirmaster, Mr. Warlito Yalung, an alumni of the Philippines Madrigal Singers.
+    \n\nFounded in 2008 by its pioneer members and their conductor Sir Oliver Lee, this group has been continuously growing by being a music loving family.
+    \n\nNo Dejes de Cantar!\n"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="History and profile"
+                android:textSize="30sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#555555"
+                />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hc"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+
+                />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/fbhc"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/facebook" />
+
+</RelativeLayout>

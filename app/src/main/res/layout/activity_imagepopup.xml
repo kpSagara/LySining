@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/abg">
+
+    <TextView
+        android:id="@+id/popdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="date"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        />
+
+    <TextView
+        android:id="@+id/popname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/popdate"
+        android:layout_gravity="center_horizontal"
+        android:text="Name"
+        android:textAlignment="center"
+        android:fontFamily="@font/zapfhumanist601bt"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        />
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/imagepop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</RelativeLayout>
